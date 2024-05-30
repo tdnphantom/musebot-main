@@ -16,7 +16,7 @@ class Music(commands.Cog):
         self.YDL_OPTIONS = {'format': 'bestaudio', 'noplaylist': 'True'}
         self.YDL_OPTIONS_PLAYLIST_LENGTH = {'flatplaylist': 'True', 'playlistend': 1}
         self.FFMPEG_OPTIONS = {'before_options': '-reconnect 1 -reconnect_streamed 1 -reconnect_delay_max 5', 'options': '-vn'}
-        self.LINK_LIST = ('www.youtube.com', 'youtube.com', 'youtu.be', 'm.youtube.com', 'www.soundcloud.com', 'soundcloud.com')
+        self.LINK_LIST = ('www.youtube.com', 'youtube.com', 'youtu.be', 'm.youtube.com', 'www.soundcloud.com', 'soundcloud.com','https://open.spotify.com/')
 
     async def search(self, video, ctx):
         check = video.split('/')
